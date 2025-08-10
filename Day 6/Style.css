@@ -1,0 +1,68 @@
+/* h1
+{
+    color:#F76D6C;
+}
+p
+{
+    color:blueviolet;
+}  */
+
+/* *
+{
+    color:blueviolet;
+}  */
+
+/* p
+{
+    color:blueviolet;
+} */
+
+/* .a 
+{
+    color:brown;
+}  */
+
+/* #head
+{
+    color:chocolate;
+} */
+
+/* h1,p
+{
+    color:red;
+} */
+
+/* div h1
+{
+    color:blueviolet;
+} */
+
+/* div>h2
+{
+    color: blueviolet;
+} */
+
+ /* h1+p
+{
+    color:forestgreen;
+}  */
+
+/* h1[id="head1"]
+{
+    color:#F76D6C;
+} */
+
+/* #head
+{
+    color:blueviolet;
+} */
+
+/* #head:hover
+{
+    color:brown;
+} */
+
+/* #one p::first-line
+{
+    color:cornflowerblue;
+} */

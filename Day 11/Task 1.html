@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #out
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,100px);;
+            gap:10px;
+            grid-template-areas:
+                "in1 in1 in1"
+                "in2 in2 in2"
+                "in3 in3 in4"
+                "in5 in5 in4"
+                "in6 in6 in6";
+        }
+        #out>div
+        {
+            border:2px solid black;
+            text-align: center;
+            line-height:100px;
+            font-size: 24px;
+        }
+        #in1
+        {
+            grid-area: in1;
+        }
+        #in2
+        {
+            grid-area: in2;
+        }
+        #in3
+        {
+            grid-area: in3;
+        }
+        #in4
+        {
+            grid-area:in4;
+        }
+        #in5
+        {
+            grid-area:in5;
+        }
+        #in6
+        {
+            grid-area: in6;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="out">
+          <div id="in1">header</div>
+          <div id="in2">nav</div>
+          <div id="in3">section</div>
+          <div id="in4">aside</div>
+          <div id="in5">article</div>
+          <div id="in6">footer</div>
+          
+    </div>
+</body>
+</html>

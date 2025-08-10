@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        .container
+        {
+            display: grid;
+            grid-template-columns: 1fr 400px minmax(200px,500px);
+            gap:5px;
+            background-color: #ddd;
+            padding 10px;
+            margin-bottom: 20px;
+        }
+
+        .container>div
+        {
+            background-color: seagreen;
+            color: #fff;
+            padding:10px;
+        }
+
+        .container>div:nth-last-child(2)
+        {
+            height: 70px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Grid Sizing Exercise</h1>
+    <div class="container">
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>50px high</div>
+    </div>
+    <div class="container">
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>width expands to fill space</div>
+        <div>400px wide</div>
+        <div>min 200px max 500px wide</div>
+
+        <div>50px high</div>
+    </div>
+</body>
+</html>

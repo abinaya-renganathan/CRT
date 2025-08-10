@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 100px);
+            gap: 10px;
+            grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                "main main aside"
+                "article article aside"
+                "footer footer footer";
+        }
+
+        .container > * {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+            line-height: 80px;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        article {
+            grid-area: article;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Travel Blog</h1>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Destination</a> |
+                <a href="#">Content</a>
+            </nav>
+        </header>
+        
+        <nav>Navigation Menu</nav>
+
+        <main>
+            <section>
+                <h2>Trip to Japan</h2>
+                <p>I had an amazing trip to Japan last summer..</p>
+            </section>
+        </main>
+
+        <article>
+            <h2>Exploring Italy</h2>
+            <p>Rome and Venice were unforgettable!</p>
+        </article>
+
+        <aside>
+            <h3>Travel Tips</h3>
+            <ul>
+                <li>Pack Light</li>
+                <li>Learn basic local phrases</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>&copy; 2025 My Travel Blog</p>
+        </footer>
+    </div>
+</body>
+</html>
